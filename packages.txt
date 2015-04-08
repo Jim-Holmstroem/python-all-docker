@@ -1,0 +1,264 @@
+abstract-rendering    0.5.1   Rendering as a binning process / 3-clause BSD   
+apptools    4.2.1   application tools / BSD     
+argcomplete     0.8.4   Bash tab completion for argparse. Tab complete all the things! / Apache     
+astroid     1.3.4   abstract syntax tree for Python with inference support. / LGPL  
+astropy     1.0.1   Community-developed python astronomy tools / BSD    
+atom    0.3.9   Memory efficient Python objects / BSD   
+basemap     1.0.7   Plot data on map projections with matplotlib / PSF  
+bcolz   0.8.1   columnar and compressed data containers. / BSD  
+beautiful-soup  4.3.2   Screen-scraping library / PSF, MIT  
+binstar     0.10.1  Binstar command line client library / BSD   
+biopython   1.65    Freely available tools for computational molecular biology / BSD-like   
+bitarray    0.8.1   efficient arrays of booleans -- C extension / PSF   
+blaze   0.7.3   NumPy and Pandas interface to Big Data / BSD    
+blaze-core  0.7.3   Blaze is the next generation of NumPy / BSD     
+blist   1.3.6   a replacement type with better performance for modifying large lists / BSD  
+blz     0.6.2   a compressed data container / BSD   
+bokeh   0.8.1   Statistical and novel interactive HTML plots for Python / 3-clause BSD  
+boto    2.36.0  Amazon Web Services Library / MIT   
+bsddb   1.0     The bsddb module provides an interface to the Berkeley DB library / PSF     
+bsdiff4     1.1.4   binary diff and patch using the BSDIFF4-format / BSD    
+cairo   1.12.18     Cairo is a 2D graphics library with support for multiple output devices. / LGPL 2.1, MPL 1.1    
+casuarius   1.1     Cython bindings for the Cassowary constraint solver. / LGPL     
+cdecimal    2.3     Fast drop-in replacement for decimal.py / BSD   
+certifi     14.05.14    Python package for providing Mozilla's CA Bundle. / ISC     
+cffi    0.9.2   Foreign Function Interface for Python calling C code / MIT  
+chaco   4.5.0   interactive 2-dimensional plotting / BSD    
+chameleon   2.22    Fast HTML/XML Template Compiler. / BSD-like     
+cheetah     2.4.4   Cheetah is a template engine and code generation tool. / MIT    
+chrpath    0.13    Tool to edit the rpath in ELF binaries / GPL    
+clyent  0.3.4   Command line client Library for windows and posix / BSD     
+colorama    0.3.3   Cross-platform colored terminal text. / BSD     
+configobj   5.0.6   Config file reading, writing and validation / BSD   
+coverage    3.7.1   Code coverage measurement for Python / BSD  
+cryptography    0.8     provides cryptographic recipes and primitives to Python developers / Apache     
+cssselect   0.9.1   cssselect parses CSS3 Selectors and translates them to XPath 1.0 / BSD  
+cubes   1.0     a light-weight Python OLAP framework for small to middle data warehouses / MIT  
+curl   7.38.0  curl is a command line tool and library for transferring data with URL syntax / MIT/X derivate  
+cvxopt    1.1.7   CVXOPT is a free software package for convex optimization / GPL     
+cymem   1.11    Manage calls to calloc/free through Cython / MIT    
+cython  0.22    The Cython compiler for writing C extensions for the Python language / Apache   
+cytoolz     0.7.2   Cython implementation of Toolz: High performance functional utilities / BSD     
+dask    0.3.0   Minimal task scheduling abstraction / BSD   
+datashape   0.4.4   A data description language / BSD   
+datrie  0.7     Super-fast, efficiently stored Trie for Python / LGPLv2     
+db    5.3.28  Databases for Humans / AGPLv3   
+decorator   3.4.0   Better living through Python with decorators / BSD  
+dill    0.2.2   serialize all of python (almost) / 3-clause BSD     
+django  1.7.3   Web framework that encourages rapid development / BSD   
+dnspython   1.10.0  A DNS toolkit for Python / BSD-style    
+docopt  0.6.2   Pythonic argument parser, that will make you smile / MIT    
+docutils    0.12    Utilities for general- and special-purpose documentation / Public-Domain, PSF, 2-clause BSD, GPLv3  
+dynd-python     0.6.5   Python exposure of the DyND dynamic multi-dimensional array library / BSD   
+ecdsa   0.13    ECDSA cryptographic signature library (pure python) / MIT   
+enable  4.4.1   low-level drawing and interaction / BSD     
+enaml   0.9.8   Declarative DSL for building rich user interfaces in Python / BSD   
+enum34  1.0.4   Robust enumerated type support in Python / BSD  
+envisage    4.4.0   extensible application framework / BSD  
+ephem   3.7.5.3     Compute positions of the planets and stars / LGPL   
+execnet     1.2.0   execnet: rapid multi-Python deployment / MIT    
+fabric  1.10.1  Fabric is a simple, Pythonic tool for remote execution and deployment / BSD     
+fastcache   1.0.2   C implementation of Python 3 functools.lru_cache / MIT  
+faulthandler    2.3     Display the Python traceback on a crash / BSD   
+feedparser  5.1.3   Universal feed parser / MIT     
+fiona   1.1.6   Fiona reads and writes spatial data files / BSD     
+flake8  2.3.0   the modular source code checker: pep8, pyflakes and co / MIT    
+flask   0.10.1  A microframework based on Werkzeug, Jinja2 and good intentions / BSD    
+flask-wtf   0.11    Simple integration of Flask and WTForms / BSD   
+fontconfig   2.11.1  Fontconfig is a library for configuring and customizing font access / BSD   
+freetype   2.5.2   A Free, High-Quality, and Portable Font Engine / FreeType License   
+funcsigs    0.4     Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+ / Apache    
+future  0.14.3  Clean single-source support for Python 3 and 2 / MIT    
+futures     2.2.0   Backport of the concurrent.futures package from Python 3.2 / BSD    
+gdal    1.11.2  GDAL: Geospatial Data Abstraction Library / MIT     
+gdata   2.0.18  Python client library for Google data APIs / Apache     
+gensim  0.10.3  Python framework for fast Vector Space Modelling / LGPL     
+geos    3.3.3   GEOS is a C++ port of the Java Topology Suite (JTS). / LGPL     
+gevent  1.0.1   Coroutine-based network library / MIT   
+gevent-websocket    0.9.3   Websocket handler for the gevent pywsgi server, a Python network library / Apache   
+glueviz     0.4.0   Multidimensional data visualzation across files / MIT   
+googlecl    0.9.12  Use (some) Google services from the command line / Apache   
+graphite-web   0.9.13  Enterprise scalable realtime graphing / Apache  
+greenlet    0.4.5   Lightweight in-process concurrent programming / MIT     
+grin    1.2.1   A grep program configured the way I like it / BSD   
+gunicorn    19.1.0  WSGI HTTP Server for UNIX / MIT     
+h5py    2.4.0   Read and write HDF5 files from Python / 3-clause BSD    
+hdf5     1.8.14  HDF5 is a data model, library, and file format for storing and managing data / BSD-like     
+html5lib    0.999   HTML parser based on the WHATWG HTML specifcation / MIT     
+hyde    0.8.5   hyde is a static website generator / MIT    
+iopro   1.7.0   python interface for databases, NoSQL stores, Amazon S3, and large data files / proprietary - Continuum Analytics, Inc.     
+ipython     3.0.0   IPython: Productive Interactive Computing / BSD     
+itsdangerous    0.24    Various helpers to pass trusted data to untrusted environments and back. / BSD  
+jdcal   1.0     Julian dates from proleptic Gregorian and Julian calendars. / BSD   
+jedi    0.8.1   / MIT   
+jinja2  2.7.3   An easy to use stand-alone template engine written in pure python. / BSD    
+joblib  0.8.4   using Python functions as pipeline jobs / BSD   
+jsonschema  2.4.0   An implementation of JSON Schema validation for Python / MIT    
+kiwisolver  0.1.3   A fast implementation of the Cassowary constraint solver / BSD  
+lcms    1.19    A free, open source, CMM engine / MIT   
+libdynd    0.6.5   Python exposure of DyND / BSD   
+libffi   3.0.13  A portable foreign-function interface library / MIT     
+libnetcdf    4.3.2   libraries and data formats that support array-oriented scientific data / MIT    
+libpng    1.5.13  libpng is the official PNG reference library. / Open Source     
+libsodium     0.4.5   a modern software library for encryption, signatures, password hashing, etc. / MIT  
+libtiff   4.0.2   PyLibTiff: a Python tiff library / BSD-like     
+libxml2   2.9.0   The XML C parser and toolkit of Gnome / MIT     
+libxslt   1.1.28  Libxslt is the XSLT C library developed for the GNOME project / MIT     
+llvmlite    0.2.2   lightweight wrapper around basic LLVM functionality / BSD   
+logilab-common  0.63.2  collection of low-level Python packages and modules used by Logilab projects / LGPL     
+lxml    3.4.2   XML processing library combining libxml2/libxslt with the ElementTree API / BSD     
+markdown   2.6.1   Python implementation of Markdown / BSD     
+markupsafe  0.23    Implements a XML/HTML/XHTML Markup safe string for Python / BSD     
+mathjax     2.2     A JavaScript display engine for mathematics that works in all browsers / Apache     
+matplotlib  1.4.3   Python plotting package / PSF-based     
+mayavi  4.4.0   The Mayavi scientific data 3-dimensional visualizers / BSD  
+mccabe  0.3     McCabe checker, plugin for flake8 / MIT     
+mdp     3.3     a Python data processing framework. / BSD   
+mercurial   3.3.2   Fast scalable distributed SCM (revision control, version control) system / GPLv2    
+mistune     0.5.1   The fastest markdown parser in pure Python with renderer feature / BSD  
+mock    1.0.1   A Python Mocking and Patching Library for Testing / BSD     
+mpi4py    1.3     MPI for Python / BSD    
+mpich2    1.4.1p1     a high performance widely portable implementation of the MPI standard / mpich license   
+mpmath  0.19    Python library for arbitrary-precision floating-point arithmetic / BSD  
+multimethods    1.0.0   A simple python multidispatch. / MIT    
+multipledispatch    0.4.7   Multiple dispatch / BSD     
+murmurhash     0.24    Cython .pxd files for some of the MurmurHash 2 and 3 hash functions / Public-Domain     
+natsort     3.5.0   Sort lists naturally / MIT  
+netcdf4     1.1.6   python/numpy interface to netCDF library / MIT  
+networkx    1.9.1   Python package for creating and manipulating graphs and networks / BSD  
+nltk    3.0.2   Natural Language Toolkit / Apache   
+nose    1.3.4   nose extends unittest to make testing easier / LGPL     
+numba   0.17.0  compiling Python code using LLVM / BSD  
+numexpr     2.3.1   Fast numerical expression evaluator for NumPy / MIT     
+numpy   1.9.2   array processing for numbers, strings, records, and objects. / BSD  
+numpydoc    0.5     Sphinx extension to support docstrings in Numpy format / BSD    
+odo     0.3.1   Data Migration for Blaze Project / BSD  
+opencv   2.4.10  a library of programming functions mainly aimed at real-time computer vision / BSD  
+openpyxl    1.8.5   A Python library to read/write Excel 2007 xlsx/xlsm files / MIT     
+openssl    1.0.1k  OpenSSL is an open-source implementation of the SSL and TLS protocols / Apache-style    
+pandas  0.15.2  Powerful data structures for data analysis, time series,and statistics / BSD    
+pandasql    0.6.1   sqldf for pandas / BSD  
+paramiko    1.15.2  SSH2 protocol library / LGPL    
+passlib     1.6.2   comprehensive password hashing framework supporting over 30 schemes / BSD   
+pastedeploy     1.5.2   Load, configure, and compose WSGI applications and servers / MIT    
+patchelf    0.6     a small utility to modify the dynamic linker and RPATH of ELF executables / GPLv3   
+patsy   0.3.0   a library for describing statistical models and building design matrices. / BSD     
+pep381client    1.5     Mirroring tool that implements the client (mirror) side of PEP 381 / Academic Free License  
+pep8    1.6.2   Python style guide checker / MIT    
+pexpect    3.3     Pexpect allows easy control of interactive console applications / ISC   
+pil     1.1.7   adds image processing capabilities to your Python interpreter / PIL license     
+pillow  2.7.0   Python Imaging Library (Fork) / PIL license     
+pip     6.0.8   PyPA recommended tool for installing Python packages / MIT  
+pixman    0.26.2  a low-level software library for pixel manipulation / MIT   
+plac    0.9.1   The smartest command line arguments parser in the world / BSD   
+ply     3.4     Python Lex & Yacc / BSD     
+preshed    0.37    Cython hash table that trusts the keys are pre-hashed / MIT     
+progressbar     2.3     Text progress bar library for Python / LGPL     
+protobuf   2.6.1   Protocol Buffers / 3-clause BSD     
+psutil  2.2.1   A cross-platform process and system utilities module for Python / BSD   
+psycopg2     2.6     Python-PostgreSQL Database Adapter / GPL, BSD-like, ZPL     
+ptyprocess    0.4     Run a subprocess in a pseudo terminal / ISC     
+py  1.4.26  library with cross-python path, ini-parsing, io, code, log facilities / MIT     
+py2cairo     1.10.0  Pycairo is a set of Python bindings for the cairo graphics library / LGPL 2.1, MPL 1.1  
+pyamg   2.2.1   Algebraic Multigrid Solvers in Python / BSD     
+pyasn1  0.1.7   Offline IP address to Autonomous System Number lookup module / BSD  
+pycosat     0.6.1   bindings to picosat (a SAT solver) / MIT    
+pycparser   2.10    C parser in Python / BSD    
+pycrypto    2.6.1   Cryptographic modules for Python. / Public-Domain   
+pycurl   7.19.5.1    PycURL -- cURL library module for Python / LGPL, MIT    
+pyface  4.4.0   traits-capable windowing framework / BSD    
+pyflakes    0.8.1   passive checker of Python programs / MIT    
+pygments    2.0.2   Pygments is a syntax highlighting package written in Python / BSD   
+pylint  1.4.2   python code static checker / GPL    
+pymc    2.3.4   Markov Chain Monte Carlo sampling toolkit / Academic Free License   
+pymongo     2.8     Python driver for MongoDB / Apache  
+pymysql     0.6.6   Pure-Python MySQL Driver / MIT  
+pyodbc  3.0.7   DB API Module for ODBC / MIT    
+pyopenssl   0.14    Python wrapper module around the OpenSSL library / Apache   
+pyparsing   2.0.3   Python parsing module / MIT     
+pyqt    4.11.3  PyQt is a Python binding of the cross-platform GUI toolkit Qt / GPL     
+pyramid     1.5.2   The Pyramid Web Framework, a Pylons project / BSD   
+pysal   1.6.0   A library of spatial analysis functions. / 3-clause BSD     
+pysam   0.6     python module for reading and manipulating Samfiles / MIT   
+pyserial    2.7     Python Serial Port Extension / PSF  
+pysnmp    4.2.5   A pure-Python SNMPv1/v2c/v3 library / BSD   
+pytables    3.1.1   brings together Python, HDF5 and NumPy to easily handle large amounts of data / BSD     
+pytest  2.6.4   simple powerful testing with Python / MIT   
+pytest-cache    1.0     pytest plugin with mechanisms for caching across test runs / GPL    
+pytest-pep8     1.0.6   pytest plugin to check PEP8 requirements / MIT  
+python  2.7.9   general purpose programming language / PSF  
+python-dateutil     2.4.1   Extensions to the standard Python datetime module / BSD     
+python-ntlm     1.1.0   provides NTLM support, including an authentication handler for urllib2 / LGPL   
+pytz    2015.2  World timezone definitions, modern and historical / MIT     
+pywget  2.2     pure python download utility / Public-Domain    
+pyyaml  3.11    YAML parser and emitter for Python / MIT    
+pyzmq   14.5.0  zeromq bindings for Python / LGPL and BSD   
+qt    4.8.6   Qt is a cross-platform application and UI framework / LGPL  
+quandl  2.8.5   Package for Quandl API access / MIT     
+queuelib    1.2.2   Collection of persistent (disk-based) queues / BSD  
+readline    6.2     provides line-editing and for programs with a command-line interface / GPLv3    
+redis    2.6.9   Redis is an open source, BSD licensed, advanced key-value cache and store / 3-clause BSD    
+redis-py     2.10.3  Redis Python Client / MIT   
+reportlab   3.1.44  The ReportLab Toolkit / BSD     
+repoze.lru  0.6     A tiny LRU cache implementation and decorator / BSD     
+requests    2.6.0   Python HTTP for Humans / ISC    
+rope    0.9.4   a python refactoring library / GPL  
+runipy  0.1.3   Run IPython notebooks from the command line / BSD   
+scikit-bio    0.2.3   Data structures, algorithms and educational resources for bioinformatics. / BSD     
+scikit-image    0.11.2  Image processing routines for SciPy / 3-clause BSD  
+scikit-learn    0.15.2  A set of python modules for machine learning and data mining / 3-clause BSD     
+scipy   0.15.1  Scientific Library for Python / BSD     
+scrapy  0.24.4  A high-level Python Screen Scraping framework / BSD     
+seaborn     0.5.1   statistical data visualization / BSD    
+setuptools  14.3    Easily download, build, install, upgrade, and uninstall Python packages / PSF or ZPL    
+shapely   1.5.6   Geometric objects, predicates, and operations / BSD     
+sip    4.16.5  / GPL   
+six     1.9.0   Python 2 and 3 compatibility utilities / MIT    
+sockjs-tornado  1.0.1   SockJS python server implementation on top of Tornado framework / MIT   
+spacy    0.70    Industrial-strength NLP / Commercial, Trial, AGPLv3     
+sphinx  1.2.3   Python documentation generator / BSD    
+sqlalchemy  0.9.9   Database Abstraction Library / MIT  
+sqlite    3.8.4.1     implements a self-contained, zero-configuration, SQL database engine / Public-Domain    
+sqlparse    0.1.14  A non-validating SQL parser module for Python / BSD     
+ssh     1.8.0   SSH2 protocol library / LGPL    
+ssl_match_hostname  3.4.0.2     The ssl.match_hostname() function from Python 3.4 / PSF     
+starcluster     0.93.3  an open source cluster-computing toolkit for Amazon's Elastic Compute Cloud / LGPL  
+statsmodels     0.6.1   Statistical computations and models for use with SciPy / 3-clause BSD   
+sympy   0.7.6   SymPy is a Python library for symbolic mathematics / 3-clause BSD   
+terminado    0.5     Terminals served to term.js using Tornado websockets / BSD  
+theano    0.6.0   Optimizing compiler for evaluating mathematical expressions on CPUs and GPUs / BSD  
+thinc    1.75    Learn sparse linear models / Commercial, GPLv2  
+tk    8.5.18  powerful but easy to learn dynamic programming language / BSD-like  
+toolz   0.7.1   List processing tools and functional utilities / BSD    
+tornado     4.1     Tornado is a Python web framework and asynchronous networking library / Apache  
+traits  4.5.0   explicitly typed attributes for Python / BSD    
+traitsui    4.4.0   traits-capable user interfaces / BSD    
+translationstring   1.3     Utility library for i18n relied on by various Repoze and Pyramid packages / BSD     
+twisted     15.0.0  Twisted is an event-driven networking engine for Python / MIT   
+ujson   1.33    Ultra fast JSON encoder and decoder for Python / BSD    
+unicodecsv  0.9.4   The unicodecsv file reads and decodes byte strings for you / BSD    
+unidecode   0.4.17  ASCII transliterations of Unicode text / GPLv2  
+unixodbc 2.3.1   unixODBC is an open source project that implements the ODBC API / LGPLv2    
+util-linux  2.21    Util-linux is a suite of essential utilities for any Linux system / GPL     
+uuid    1.30    UUID object and generation functions (Python 2.3 or higher) / PSF   
+venusian    1.0     A library for deferring decorator actions / BSD     
+virtualenv  12.0.7  Virtual Python Environment builder / MIT    
+vtk     5.10.1  software system for 3D computer graphics, image processing and visualization / BSD  
+w3lib   1.8.1   Library of web-related functions / BSD  
+webob   1.4     WSGI request and response object / MIT  
+websocket   0.2.1   Websocket implementation for gevent / MIT   
+werkzeug    0.10.1  The Swiss Army knife of Python web development / BSD    
+whisper 0.9.13  Fixed size round-robin style database / Apache  
+whoosh  2.5.7   Fast, pure-Python full text indexing, search, and spell checking library / BSD  
+workerpool 0.9.2   Module for distributing jobs to a pool of worker threads / MIT  
+wtforms     2.0.2   A flexible forms validation and rendering library for Python / BSD  
+xlrd    0.9.3   Library for developers to extract data from Microsoft Excel spreadsheet files / BSD     
+xlsxwriter  0.6.7   A Python module for creating Excel XLSX files / BSD     
+xlutils     1.7.1   Utilities for working with Excel files that require both xlrd and xlwt / MIT    
+xlwt    0.7.5   This package is for writing data and formatting information to Excel files / BSD    
+yaml   0.1.4   a human friendly data serialization standard for all programming languages / MIT    
+yt  3.1     An analysis and visualization toolkit for Astrophysical simulations / BSD   
+zeromq   4.0.4   a messaging system, or "message-oriented middleware" / LGPL     
+zlib  1.2.8   A Massively Spiffy Yet Delicately Unobtrusive Compression Library / zlib    
+zope.deprecation    4.1.2   Zope Deprecation Infrastructure / ZPL 2.1   
+zope.interface  4.1.2   Interfaces for Python / ZPL 2.1

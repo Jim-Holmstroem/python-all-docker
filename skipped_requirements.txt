@@ -1,0 +1,5 @@
+libdynd==0.6.5
+libnetcdf==4.3.2
+libsodium==0.4.5
+libxml2==2.9.0
+libxslt==1.1.28
