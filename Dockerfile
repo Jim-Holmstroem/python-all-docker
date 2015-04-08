@@ -50,12 +50,15 @@ RUN apt-get update && apt-get install --assume-yes \
     libxslt1.1 \
     libxslt1-dev \
     libyaml-dev \
+    libzmq3 \
+    libzmq3-dev \
     ntp \
     pkg-config \
     python \
     python-dev \
     python-pip \
     ranger \
+    swig \
     zlib1g \
     zlib1g-dev
 
