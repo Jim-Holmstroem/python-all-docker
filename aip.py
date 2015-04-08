@@ -23,7 +23,7 @@ def install(requirement):
 
     return not(
         os.system(
-            "pip install {requirement}".format(
+            "pip install --allow-external {requirement}".format(
                 requirement=requirement,
             )
         )
