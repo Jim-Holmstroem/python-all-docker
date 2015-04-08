@@ -37,8 +37,11 @@ RUN apt-get update && apt-get install --assume-yes \
     libnetcdf-dev \
     libnetcdfc7 \
     libnetcdfc++4 \
+    libncurses5 \
+    libncurses5-dev \
     libpng-dev \
     libpq-dev \
+    libssl-dev \
     libswscale-dev \
     libtbb-dev \
     libtiff-dev \
@@ -46,6 +49,7 @@ RUN apt-get update && apt-get install --assume-yes \
     libxml2-dev \
     libxslt1.1 \
     libxslt1-dev \
+    libyaml-dev \
     ntp \
     pkg-config \
     python \
