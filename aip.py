@@ -19,15 +19,22 @@ def install(requirement):
     print(
         "Installing '{}'".format(requirement)
     )
-    import os
+    import subprocess
 
-    return not(
-        os.system(
-            "pip install --allow-external {requirement}".format(
-                requirement=requirement,
-            )
-        )
+    command = "pip install --allow-all-external {requirement}".format(
+        requirement=requirement,
     )
+    print("command: {}".format(command))
+
+    try:
+        subprocess.check_call(
+            command,
+            shell=True,
+        )
+        return True
+
+    except subprocess.CalledProcessError as cpe:
+        return False
 
 
 def main(args):
