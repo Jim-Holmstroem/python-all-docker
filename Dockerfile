@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install --assume-yes \
     gcc \
     git \
     gfortran \
+    fontconfig \
     htop \
     llvm-dev \
     llvm-3.5 \
