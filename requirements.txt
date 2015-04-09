@@ -70,7 +70,6 @@ freetype==2.5.2
 funcsigs==0.4
 future==0.14.3
 futures==2.2.0
-gdal==1.11.2
 gdata==2.0.18
 gensim==0.10.3
 geos==3.3.3
