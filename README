@@ -1,0 +1,7 @@
+missing
+-------
+blaze-core # already included in blaze?
+gdal
+bsddb-1.0 -> bsddb-5.3 (builtin with python)
+
+

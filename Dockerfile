@@ -77,4 +77,10 @@ RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
     pip install $(cat /etc/requirements.txt | grep "scipy==") && \
     pip install $(cat /etc/requirements.txt | grep "pandas==")
 
+ADD https://github.com/matplotlib/basemap/archive/v1.0.7rel.zip /tmp/basemap-1.0.7
+RUN cd /tmp/basemape-1.0.7 && python setup.py install && cd -
+
+ADD https://github.com/Blosc/bcolz/archive/v0.8.1.zip /tmp/colz-0.8.1
+RUN cd /tmp/colz-0.8.1 && python setup.py install && cd -
+
 RUN aip install --requirement /etc/requirements.txt
