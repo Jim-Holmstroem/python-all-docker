@@ -1,4 +1,4 @@
-IMAGE=jimho/python-science
+IMAGE=jimho/python-all
 
 build:
 	docker build -t ${IMAGE} .
