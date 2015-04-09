@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install --assume-yes \
     llvm-3.5-dev \
     libavcodec-dev \
     libavformat-dev \
+    libatlas-base-dev \
     libblas-dev \
     libcurl4-openssl-dev \
     libdc1394-22-dev \
@@ -62,10 +63,17 @@ RUN apt-get update && apt-get install --assume-yes \
     zlib1g \
     zlib1g-dev
 
+RUN pip install --upgrade pip
+
 ENV LLVM_CONFIG /usr/bin/llvm-config-3.5
 
 COPY aip.py /usr/local/bin/aip
 RUN chmod +x /usr/local/bin/aip
 COPY requirements.txt /etc/requirements.txt
+
+RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
+    pip install $(cat /etc/requirements.txt | grep "numpy==") && \
+    pip install $(cat /etc/requirements.txt | grep "scipy==") && \
+    pip install $(cat /etc/requirements.txt | grep "pandas==")
 
 RUN aip install --requirement /etc/requirements.txt
