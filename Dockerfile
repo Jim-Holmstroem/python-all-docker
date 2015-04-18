@@ -33,6 +33,7 @@ RUN apt-get update && apt-get install --assume-yes \
     libgtk2.0-dev \
     libhdf5-7 \
     libhdf5-dev \
+    libiodbc2-dev \
     libjpeg-dev \
     libjasper-dev \
     liblapack-dev \
