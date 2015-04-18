@@ -15,6 +15,32 @@ TODO
 ----
 try gdal installation without explicit swig/python make generate (instead rely on configure --with-python)
 
+mayavi (apt-get install python-vtk)
+------
+      File "tvtk/setup.py", line 46, in gen_tvtk_classes_zip
+        from code_gen import TVTKGenerator
+      File "tvtk/code_gen.py", line 10, in <module>
+        import vtk
+    ImportError: No module named vtk
+    
+    ----------------------------------------
+    Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-1SUeJD/mayavi/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-6V6FN8-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-1SUeJD/mayavi
+
+chrpath (pip install -> apt-get install)
+-------
+Collecting chrpath==0.13
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement chrpath==0.13 (from versions: )
+  No matching distribution found for chrpath==0.13
+
+cairo (pip install cairo -> apt-get install libcairo2-dev)
+-----
+Collecting cairo==1.12.18
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement cairo==1.12.18 (from versions: )
+  No matching distribution found for cairo==1.12.18
 
 chaco (skipped for now)
 -----

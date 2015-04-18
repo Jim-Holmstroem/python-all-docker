@@ -10,6 +10,7 @@ RUN ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 
 RUN apt-get update && apt-get install --assume-yes \
     build-essential \
+    chrpath \
     cmake \
     curl \
     cython \
@@ -25,6 +26,8 @@ RUN apt-get update && apt-get install --assume-yes \
     libavformat-dev \
     libatlas-base-dev \
     libblas-dev \
+    libcairo2 \
+    libcairo2-dev \
     libcurl4-openssl-dev \
     libdc1394-22-dev \
     libedit2 \
@@ -71,6 +74,7 @@ RUN apt-get update && apt-get install --assume-yes \
     python \
     python-dev \
     python-pip \
+    python-vtk \
     ranger \
     swig \
     ubuntu-dev-tools \
@@ -92,11 +96,13 @@ RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
 # Needed for pip install enable
 RUN pip install --allow-unverified PIL PIL==1.1.7
 
-ADD http://download.osgeo.org/geos/geos-3.3.9.tar.bz2 /tmp/geos-3.3.9.tar.gz
-RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && mkdir build && cd build && cmake .. && make && make install
-
 ADD https://github.com/Blosc/bcolz/archive/v0.8.1.tar.gz /tmp/bcolz-0.8.1.tar.gz
 RUN cd /tmp && tar -xvf bcolz-0.8.1.tar.gz && cd bcolz-0.8.1 && python setup.py install
+
+ADD http://download.osgeo.org/geos/geos-3.3.9.tar.bz2 /tmp/geos-3.3.9.tar.gz
+RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && \
+    mkdir build && cd build && \
+    cmake .. && make && make install
 
 ADD http://download.osgeo.org/gdal/1.11.2/gdal-1.11.2.tar.gz /tmp/gdal-1.11.2.tar.gz
 RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2 && \
@@ -105,9 +111,14 @@ RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2 && \
     cd swig/python && \
     make veryclean && make generate && \
     cd - \
-    make install
+    make install \
+    ldconfig
 
-RUN ldconfig
+# Temporarly replaced by apt-get install python-vtk since I couldn't get the python bindings properly installed
+#ADD http://www.vtk.org/files/release/6.2/VTK-6.2.0.tar.gz /tmp/VTK-6.2.0.tar.gz
+#RUN cd /tmp && tar -xvf VTK-6.2.0.tar.gz && cd VTK-6.2.0 && \
+#    mkdir build && cd build && \
+#    cmake .. && make && make install
 
 COPY aip.py /usr/local/bin/aip
 RUN chmod +x /usr/local/bin/aip

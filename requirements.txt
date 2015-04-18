@@ -14,7 +14,6 @@ blz==0.6.2
 bokeh==0.8.1
 boto==2.36.0
 bsdiff4==1.1.4
-cairo==1.12.18
 casuarius==1.1
 cdecimal==2.3
 certifi==14.05.14
@@ -22,7 +21,6 @@ cffi==0.9.2
 # chaco==4.5.0
 chameleon==2.22
 cheetah==2.4.4
-chrpath==0.13
 clyent==0.3.4
 colorama==0.3.3
 configobj==5.0.6
