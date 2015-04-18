@@ -2,12 +2,19 @@
 
 
 from itertools import imap
+from operator import methodcaller
 
 
 def read_requirements(filename):
     import string
+    def not_(f):
+        return lambda *args, **kwargs: not(f(*args, **kwargs))
+
     with open(filename) as f:
-        return map(string.strip, f)
+        return filter(
+            not_(methodcaller('startswith', '#')),
+            map(string.strip, f)
+        )
 
 
 def install(requirement):
@@ -16,13 +23,15 @@ def install(requirement):
     -------
     successfully_installed :: boolean
     """
+    package, version = requirement.split('==')
     print(
         "Installing '{}'".format(requirement)
     )
     import subprocess
 
-    command = "pip install --allow-all-external {requirement}".format(
-        requirement=requirement,
+    command = "pip install --allow-external {package} --allow-unverified {package} {package}=={version}".format(
+        package=package,
+        version=version,
     )
     print("command: {}".format(command))
 

@@ -67,7 +67,6 @@ future==0.14.3
 futures==2.2.0
 gdata==2.0.18
 gensim==0.10.3
-geos==3.3.3
 gevent==1.0.1
 gevent-websocket==0.9.3
 glueviz==0.4.0

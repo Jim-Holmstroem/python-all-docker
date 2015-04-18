@@ -68,8 +68,6 @@ RUN pip install --upgrade pip
 
 ENV LLVM_CONFIG /usr/bin/llvm-config-3.5
 
-COPY aip.py /usr/local/bin/aip
-RUN chmod +x /usr/local/bin/aip
 COPY requirements.txt /etc/requirements.txt
 
 RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
@@ -77,10 +75,12 @@ RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
     pip install $(cat /etc/requirements.txt | grep "scipy==") && \
     pip install $(cat /etc/requirements.txt | grep "pandas==")
 
-ADD https://github.com/matplotlib/basemap/archive/v1.0.7rel.zip /tmp/basemap-1.0.7
-RUN cd /tmp/basemape-1.0.7 && python setup.py install && cd -
+ADD http://download.osgeo.org/geos/geos-3.3.9.tar.bz2 /tmp/geos-3.3.9.tar.gz
+RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && mkdir build && cd build && cmake .. && make && make test && make install
 
-ADD https://github.com/Blosc/bcolz/archive/v0.8.1.zip /tmp/colz-0.8.1
-RUN cd /tmp/colz-0.8.1 && python setup.py install && cd -
+ADD https://github.com/Blosc/bcolz/archive/v0.8.1.tar.gz /tmp/bcolz-0.8.1.tar.gz
+RUN cd /tmp && tar -xvf bcolz-0.8.1.tar.gz && cd bcolz-0.8.1 && python setup.py install
 
+COPY aip.py /usr/local/bin/aip
+RUN chmod +x /usr/local/bin/aip
 RUN aip install --requirement /etc/requirements.txt
