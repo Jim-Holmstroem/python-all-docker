@@ -85,7 +85,7 @@ ADD https://github.com/Blosc/bcolz/archive/v0.8.1.tar.gz /tmp/bcolz-0.8.1.tar.gz
 RUN cd /tmp && tar -xvf bcolz-0.8.1.tar.gz && cd bcolz-0.8.1 && python setup.py install
 
 ADD http://download.osgeo.org/gdal/1.11.2/gdal-1.11.2.tar.gz /tmp/gdal-1.11.2.tar.gz
-RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2.tar.gz && \
+RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2 && \
     ./configure --with-python && \
     make && \
     cd swig/python && \

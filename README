@@ -8,3 +8,253 @@ geos-3.3.3 -> geos-3.3.9
 TODO
 ----
 try gdal installation without explicit swig/python make generate (instead rely on configure --with-python)
+
+apt:
+    libgdal-dev  (fiona needs cpl_conv.h)
+
+
+explain this
+------------
+
+Collecting pil==1.1.7
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  pil is potentially insecure and unverifiable.
+  Downloading http://effbot.org/media/downloads/PIL-1.1.7.tar.gz (506kB)
+Installing collected packages: pil
+  Running setup.py install for pil
+Successfully installed pil
+
+
+
+
+pip pipe (TODO, install them)
+------
+
+chaco
+-----
+Collecting chaco==4.5.0
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Downloading chaco-4.5.0.tar.gz (409kB)
+Collecting enable (from chaco==4.5.0)
+  Downloading enable-4.5.1.zip (2.6MB)
+Requirement already satisfied (use --upgrade to upgrade): numpy in /usr/local/lib/python2.7/dist-packages (from enable->chaco==4.5.0)
+Requirement already satisfied (use --upgrade to upgrade): traits in /usr/local/lib/python2.7/dist-packages (from enable->chaco==4.5.0)
+Requirement already satisfied (use --upgrade to upgrade): traitsui in /usr/local/lib/python2.7/dist-packages (from enable->chaco==4.5.0)
+Collecting PIL (from enable->chaco==4.5.0)
+  Could not find a version that satisfies the requirement PIL (from enable->chaco==4.5.0) (from versions: )
+  Some externally hosted files were ignored as access to them may be unreliable (use --allow-external PIL to allow).
+  No matching distribution found for PIL (from enable->chaco==4.5.0)
+
+PIL
+---
+Collecting PIL (from enable==4.4.1)
+  Could not find a version that satisfies the requirement PIL (from enable==4.4.1) (from versions: )
+  Some externally hosted files were ignored as access to them may be unreliable (use --allow-external PIL to allow).
+  No matching distribution found for PIL (from enable==4.4.1)
+
+curl
+----
+Collecting curl==7.38.0
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement curl==7.38.0 (from versions: )
+  No matching distribution found for curl==7.38.0
+
+db
+--
+Collecting db==5.3.28
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement db==5.3.28 (from versions: 0.0.2, 0.0.3, 0.0.4, 0.0.5, 0.0.6, 0.0.7, 0.0.8, 0.0.9, 0.0.10, 0.0.11, 0.0.12, 0.0.13, 0.0.14, 0.0.15, 0.1.1)
+  No matching distribution found for db==5.3.28
+
+dynd-python
+-----------
+Collecting dynd-python==0.6.5
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement dynd-python==0.6.5 (from versions: )
+  No matching distribution found for dynd-python==0.6.5
+
+fiona
+-----
+Collecting fiona==1.1.6
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Downloading Fiona-1.1.6.tar.gz (261kB)
+Requirement already satisfied (use --upgrade to upgrade): six in /usr/lib/python2.7/dist-packages (from fiona==1.1.6)
+Installing collected packages: fiona
+  Running setup.py install for fiona
+    Complete output from command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-uwora1/fiona/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-Nl_bV2-record/install-record.txt --single-version-externally-managed --compile:
+    WARNING:root:Failed to get options via gdal-config: [Errno 2] No such file or directory
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'metadata_version'
+      warnings.warn(msg)
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_python'
+      warnings.warn(msg)
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_external'
+      warnings.warn(msg)
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.7
+    creating build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/rfc3339.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/collection.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/errors.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/tool.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/odict.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/inspector.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/crs.py -> build/lib.linux-x86_64-2.7/fiona
+    copying src/fiona/__init__.py -> build/lib.linux-x86_64-2.7/fiona
+    running build_ext
+    building 'fiona._drivers' extension
+    creating build/temp.linux-x86_64-2.7
+    creating build/temp.linux-x86_64-2.7/src
+    creating build/temp.linux-x86_64-2.7/src/fiona
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c src/fiona/_drivers.c -o build/temp.linux-x86_64-2.7/src/fiona/_drivers.o
+    src/fiona/_drivers.c:311:22: fatal error: cpl_conv.h: No such file or directory
+     #include "cpl_conv.h"
+                          ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+
+    ----------------------------------------
+    Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-uwora1/fiona/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-Nl_bV2-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-uwora1/fiona
+
+
+fontconfig
+----------
+Collecting fontconfig==2.11.1
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement fontconfig==2.11.1 (from versions: )
+  No matching distribution found for fontconfig==2.11.1
+
+
+hdf5
+----
+Collecting hdf5==1.8.14
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement hdf5==1.8.14 (from versions: )
+  No matching distribution found for hdf5==1.8.14
+
+iopro
+-----
+Collecting iopro==1.7.0
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement iopro==1.7.0 (from versions: )
+  No matching distribution found for iopro==1.7.0
+
+lcms
+----
+Collecting lcms==1.19
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement lcms==1.19 (from versions: )
+  No matching distribution found for lcms==1.19
+
+libtiff
+-------
+Collecting libtiff==4.0.2
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement libtiff==4.0.2 (from versions: 0.4.0)
+  No matching distribution found for libtiff==4.0.2
+
+mathjax
+-------
+Collecting mathjax==2.2
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement mathjax==2.2 (from versions: )
+  No matching distribution found for mathjax==2.2
+
+mayavi
+------
+Collecting mayavi==4.4.0
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement mayavi==4.4.0 (from versions: 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.3.1)
+  No matching distribution found for mayavi==4.4.0
+
+mpich2
+------
+Collecting mpich2==1.4.1p1
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement mpich2==1.4.1p1 (from versions: )
+  No matching distribution found for mpich2==1.4.1p1
+
+opencv
+------
+Collecting opencv==2.4.10
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement opencv==2.4.10 (from versions: )
+  No matching distribution found for opencv==2.4.10
+
+openssl
+-------
+Collecting openssl==1.0.1k
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement openssl==1.0.1k (from versions: )
+  No matching distribution found for openssl==1.0.1k
+
+patchelf
+--------
+Collecting patchelf==0.6
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Could not find a version that satisfies the requirement patchelf==0.6 (from versions: )
+  No matching distribution found for patchelf==0.6
+
+pyodbc
+------
+    /tmp/pip-build-M3aDbu/pyodbc/src/getdata.cpp:486:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    
+             if (buffer[i] == chDecimal)
+    
+                              ^
+    
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.7 -c /tmp/pip-build-M3aDbu/pyodbc/src/cnxninfo.cpp -o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/cnxninfo.o -Wno-write-strings
+    
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+    
+    creating build/lib.linux-x86_64-2.7
+    
+    c++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/row.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/cursor.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/pyodbcdbg.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/sqlwchar.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/params.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/connection.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/pyodbccompat.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/pyodbcmodule.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/buffer.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/errors.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/getdata.o build/temp.linux-x86_64-2.7/tmp/pip-build-M3aDbu/pyodbc/src/cnxninfo.o -lodbc -o build/lib.linux-x86_64-2.7/pyodbc.so
+    
+    /usr/bin/ld: cannot find -lodbc
+    
+    collect2: error: ld returned 1 exit status
+    
+    error: command 'c++' failed with exit status 1
+    
+    ----------------------------------------
+    Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-M3aDbu/pyodbc/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-cxfThx-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-M3aDbu/pyodbc
+
+
+kiva
+----
+    In file included from kiva/agg/src/gl_graphics_context.cpp:13:0:
+    
+    kiva/agg/src/gl_graphics_context.h:16:24: fatal error: GL/glu.h: No such file or directory
+    
+         #include <GL/glu.h>
+    
+                            ^
+    
+    compilation terminated.
+    
+    error: Command "c++ -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -fPIC -Ikiva/agg/src -Ikiva/agg/agg-24/include -Ikiva/agg/agg-24/font_freetype -Ikiva/agg/freetype2/src/autofit -Ikiva/agg/freetype2/src/base -Ikiva/agg/freetype2/src/bdf -Ikiva/agg/freetype2/src/cache -Ikiva/agg/freetype2/src/cff -Ikiva/agg/freetype2/src/cid -Ikiva/agg/freetype2/src/gxvalid -Ikiva/agg/freetype2/src/gzip -Ikiva/agg/freetype2/src/lzw -Ikiva/agg/freetype2/src/otvalid -Ikiva/agg/freetype2/src/pcf -Ikiva/agg/freetype2/src/pfr -Ikiva/agg/freetype2/src/psaux -Ikiva/agg/freetype2/src/pshinter -Ikiva/agg/freetype2/src/psnames -Ikiva/agg/freetype2/src/raster -Ikiva/agg/freetype2/src/sfnt -Ikiva/agg/freetype2/src/smooth -Ikiva/agg/freetype2/src/tools -Ikiva/agg/freetype2/src/truetype -Ikiva/agg/freetype2/src/type1 -Ikiva/agg/freetype2/src/type42 -Ikiva/agg/freetype2/src/winfonts -Ikiva/agg/freetype2/src/gzip -Ikiva/agg/freetype2/include -Ikiva/agg/freetype2/src -I/usr/local/lib/python2.7/dist-packages/numpy/core/include -c kiva/agg/src/gl_graphics_context.cpp -o build/temp.linux-x86_64-2.7/kiva/agg/src/gl_graphics_context.o" failed with exit status 1
+    
+    ----------------------------------------
+    Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-nR4yiF/enable/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-HbowE7-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-nR4yiF/enable
+
+
