@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install --assume-yes \
     libnetcdfc++4 \
     libncurses5 \
     libncurses5-dev \
+    libopenmpi-dev \
     libpng-dev \
     libpq-dev \
     libssl-dev \
@@ -54,6 +55,7 @@ RUN apt-get update && apt-get install --assume-yes \
     libyaml-dev \
     libzmq3 \
     libzmq3-dev \
+    mesa-common-dev \
     ntp \
     pkg-config \
     python \
