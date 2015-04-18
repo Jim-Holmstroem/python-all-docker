@@ -3,35 +3,20 @@ possible issues
 blaze-core # already included in blaze?
 bsddb-1.0 -> bsddb-5.3 (builtin with python)
 geos-3.3.3 -> geos-3.3.9
+db-5.3.28 -> db-0.1.1
+ipython-3.0.0 -> ipython-3.1.0
+lcms in python-lcms, whats up with the apt-get's?
+python-dns?
+libtiff
+mayavi-4.4.0 -> mayavi-4.3.1
 
 
 TODO
 ----
 try gdal installation without explicit swig/python make generate (instead rely on configure --with-python)
 
-apt:
-    libgdal-dev  (fiona needs cpl_conv.h)
 
-
-explain this
-------------
-
-Collecting pil==1.1.7
-/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
-  InsecurePlatformWarning
-  pil is potentially insecure and unverifiable.
-  Downloading http://effbot.org/media/downloads/PIL-1.1.7.tar.gz (506kB)
-Installing collected packages: pil
-  Running setup.py install for pil
-Successfully installed pil
-
-
-
-
-pip pipe (TODO, install them)
-------
-
-chaco
+chaco (skipped for now)
 -----
 Collecting chaco==4.5.0
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -47,14 +32,14 @@ Collecting PIL (from enable->chaco==4.5.0)
   Some externally hosted files were ignored as access to them may be unreliable (use --allow-external PIL to allow).
   No matching distribution found for PIL (from enable->chaco==4.5.0)
 
-PIL
+PIL (explicitely added to makem enable work)
 ---
 Collecting PIL (from enable==4.4.1)
   Could not find a version that satisfies the requirement PIL (from enable==4.4.1) (from versions: )
   Some externally hosted files were ignored as access to them may be unreliable (use --allow-external PIL to allow).
   No matching distribution found for PIL (from enable==4.4.1)
 
-curl
+curl (apt-get)
 ----
 Collecting curl==7.38.0
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -62,7 +47,7 @@ Collecting curl==7.38.0
   Could not find a version that satisfies the requirement curl==7.38.0 (from versions: )
   No matching distribution found for curl==7.38.0
 
-db
+db (pip: db==5.3.28 \noexists but db==0.1.1 \exists)
 --
 Collecting db==5.3.28
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -70,7 +55,7 @@ Collecting db==5.3.28
   Could not find a version that satisfies the requirement db==5.3.28 (from versions: 0.0.2, 0.0.3, 0.0.4, 0.0.5, 0.0.6, 0.0.7, 0.0.8, 0.0.9, 0.0.10, 0.0.11, 0.0.12, 0.0.13, 0.0.14, 0.0.15, 0.1.1)
   No matching distribution found for db==5.3.28
 
-dynd-python
+dynd-python (skipped)
 -----------
 Collecting dynd-python==0.6.5
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -78,7 +63,7 @@ Collecting dynd-python==0.6.5
   Could not find a version that satisfies the requirement dynd-python==0.6.5 (from versions: )
   No matching distribution found for dynd-python==0.6.5
 
-fiona
+fiona (apt-get install libgdal-dev)
 -----
 Collecting fiona==1.1.6
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -125,7 +110,7 @@ Installing collected packages: fiona
     Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-uwora1/fiona/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-Nl_bV2-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-uwora1/fiona
 
 
-fontconfig
+fontconfig (pip->apt)
 ----------
 Collecting fontconfig==2.11.1
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -134,7 +119,7 @@ Collecting fontconfig==2.11.1
   No matching distribution found for fontconfig==2.11.1
 
 
-hdf5
+hdf5 (pip->apt-get install libhdf5-mpich2-dev)
 ----
 Collecting hdf5==1.8.14
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -142,7 +127,7 @@ Collecting hdf5==1.8.14
   Could not find a version that satisfies the requirement hdf5==1.8.14 (from versions: )
   No matching distribution found for hdf5==1.8.14
 
-iopro
+iopro (skipped)
 -----
 Collecting iopro==1.7.0
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -150,7 +135,7 @@ Collecting iopro==1.7.0
   Could not find a version that satisfies the requirement iopro==1.7.0 (from versions: )
   No matching distribution found for iopro==1.7.0
 
-lcms
+lcms (pip lcms->apt liblcms2-*, python-lcms?)
 ----
 Collecting lcms==1.19
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -158,7 +143,7 @@ Collecting lcms==1.19
   Could not find a version that satisfies the requirement lcms==1.19 (from versions: )
   No matching distribution found for lcms==1.19
 
-libtiff
+libtiff (apt libtiff-dev, potential issue)
 -------
 Collecting libtiff==4.0.2
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -166,7 +151,7 @@ Collecting libtiff==4.0.2
   Could not find a version that satisfies the requirement libtiff==4.0.2 (from versions: 0.4.0)
   No matching distribution found for libtiff==4.0.2
 
-mathjax
+mathjax (skipped)
 -------
 Collecting mathjax==2.2
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -174,7 +159,7 @@ Collecting mathjax==2.2
   Could not find a version that satisfies the requirement mathjax==2.2 (from versions: )
   No matching distribution found for mathjax==2.2
 
-mayavi
+mayavi (downgraded 4.4.0 -> 4.3.1)
 ------
 Collecting mayavi==4.4.0
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -182,7 +167,7 @@ Collecting mayavi==4.4.0
   Could not find a version that satisfies the requirement mayavi==4.4.0 (from versions: 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.3.1)
   No matching distribution found for mayavi==4.4.0
 
-mpich2
+mpich2 (apt-get install libmpich2-dev (depency for mpi4py))
 ------
 Collecting mpich2==1.4.1p1
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -190,7 +175,7 @@ Collecting mpich2==1.4.1p1
   Could not find a version that satisfies the requirement mpich2==1.4.1p1 (from versions: )
   No matching distribution found for mpich2==1.4.1p1
 
-opencv
+opencv (skipped)
 ------
 Collecting opencv==2.4.10
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -198,7 +183,7 @@ Collecting opencv==2.4.10
   Could not find a version that satisfies the requirement opencv==2.4.10 (from versions: )
   No matching distribution found for opencv==2.4.10
 
-openssl
+openssl (apt-get install openssl)
 -------
 Collecting openssl==1.0.1k
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -206,7 +191,7 @@ Collecting openssl==1.0.1k
   Could not find a version that satisfies the requirement openssl==1.0.1k (from versions: )
   No matching distribution found for openssl==1.0.1k
 
-patchelf
+patchelf (not a pip and skipped)
 --------
 Collecting patchelf==0.6
 /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:79: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
@@ -214,7 +199,7 @@ Collecting patchelf==0.6
   Could not find a version that satisfies the requirement patchelf==0.6 (from versions: )
   No matching distribution found for patchelf==0.6
 
-pyodbc
+pyodbc (apt-get install unixodbc-dev)
 ------
     /tmp/pip-build-M3aDbu/pyodbc/src/getdata.cpp:486:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
     
@@ -240,7 +225,7 @@ pyodbc
     Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-M3aDbu/pyodbc/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-cxfThx-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-M3aDbu/pyodbc
 
 
-kiva
+kiva (apt-get install libglu1-mesa-dev)
 ----
     In file included from kiva/agg/src/gl_graphics_context.cpp:13:0:
     
@@ -256,5 +241,3 @@ kiva
     
     ----------------------------------------
     Command "/usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip-build-nR4yiF/enable/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-HbowE7-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-nR4yiF/enable
-
-

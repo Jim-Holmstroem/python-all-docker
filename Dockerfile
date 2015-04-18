@@ -2,11 +2,16 @@ FROM ubuntu:14.04
 
 USER root
 
+RUN useradd --create-home --home-dir /home/dev --shell /bin/bash dev && usermod --append --groups sudo dev
+ENV HOME /opt/dev
+ENV USER dev
+
 RUN ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 
 RUN apt-get update && apt-get install --assume-yes \
     build-essential \
     cmake \
+    curl \
     cython \
     gcc \
     git \
@@ -30,13 +35,16 @@ RUN apt-get update && apt-get install --assume-yes \
     libffi-dev \
     libfreetype6 \
     libfreetype6-dev \
+    libgdal-dev \
+    libglu1-mesa-dev \
     libgtk2.0-dev \
-    libhdf5-7 \
-    libhdf5-dev \
-    libiodbc2-dev \
     libjpeg-dev \
     libjasper-dev \
     liblapack-dev \
+    liblcms2-2 \
+    liblcms2-dev \
+    liblcms2-utils \
+    libmpich2-dev \
     libnetcdf-dev \
     libnetcdfc7 \
     libnetcdfc++4 \
@@ -58,12 +66,15 @@ RUN apt-get update && apt-get install --assume-yes \
     libzmq3-dev \
     mesa-common-dev \
     ntp \
+    openssl \
     pkg-config \
     python \
     python-dev \
     python-pip \
     ranger \
     swig \
+    ubuntu-dev-tools \
+    unixodbc-dev \
     zlib1g \
     zlib1g-dev
 
@@ -78,6 +89,9 @@ RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
     pip install $(cat /etc/requirements.txt | grep "scipy==") && \
     pip install $(cat /etc/requirements.txt | grep "pandas==")
 
+# Needed for pip install enable
+RUN pip install --allow-unverified PIL PIL==1.1.7
+
 ADD http://download.osgeo.org/geos/geos-3.3.9.tar.bz2 /tmp/geos-3.3.9.tar.gz
 RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && mkdir build && cd build && cmake .. && make && make install
 
@@ -91,9 +105,12 @@ RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2 && \
     cd swig/python && \
     make veryclean && make generate && \
     cd - \
-    make install && \
-    ldconfig
+    make install
+
+RUN ldconfig
 
 COPY aip.py /usr/local/bin/aip
 RUN chmod +x /usr/local/bin/aip
 RUN aip install --requirement /etc/requirements.txt
+
+USER dev
