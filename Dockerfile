@@ -79,10 +79,20 @@ RUN pip install $(cat /etc/requirements.txt | grep "cython==") && \
     pip install $(cat /etc/requirements.txt | grep "pandas==")
 
 ADD http://download.osgeo.org/geos/geos-3.3.9.tar.bz2 /tmp/geos-3.3.9.tar.gz
-RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && mkdir build && cd build && cmake .. && make && make test && make install
+RUN cd /tmp && tar -xvf geos-3.3.9.tar.gz && cd geos-3.3.9 && mkdir build && cd build && cmake .. && make && make install
 
 ADD https://github.com/Blosc/bcolz/archive/v0.8.1.tar.gz /tmp/bcolz-0.8.1.tar.gz
 RUN cd /tmp && tar -xvf bcolz-0.8.1.tar.gz && cd bcolz-0.8.1 && python setup.py install
+
+ADD http://download.osgeo.org/gdal/1.11.2/gdal-1.11.2.tar.gz /tmp/gdal-1.11.2.tar.gz
+RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2.tar.gz && \
+    ./configure --with-python && \
+    make && \
+    cd swig/python && \
+    make veryclean && make generate && \
+    cd - \
+    make install && \
+    ldconfig
 
 COPY aip.py /usr/local/bin/aip
 RUN chmod +x /usr/local/bin/aip

@@ -1,7 +1,10 @@
-missing
--------
+possible issues
+---------------
 blaze-core # already included in blaze?
-gdal
 bsddb-1.0 -> bsddb-5.3 (builtin with python)
 geos-3.3.3 -> geos-3.3.9
 
+
+TODO
+----
+try gdal installation without explicit swig/python make generate (instead rely on configure --with-python)
