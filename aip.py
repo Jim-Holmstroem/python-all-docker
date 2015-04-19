@@ -4,6 +4,9 @@ from __future__ import division, print_function
 from itertools import imap, ifilterfalse
 from operator import methodcaller
 
+import sh
+from sh import ErrorReturnCode
+
 
 def read_requirements(filename):
     import string
@@ -22,22 +25,16 @@ def read_requirements(filename):
 
 
 def pip(package, version):
-    import subprocess
-
-    command = "pip install --allow-external {package} --allow-unverified {package} {package}=={version}".format(
-        package=package,
-        version=version,
-    )
-
     try:
-        print("subprocess.check_call('{}')".format(command))
-        subprocess.check_call(
-            command,
-            shell=True,
+        sh.pip.install(
+            "{}=={}".format(package, version),
+            allow_external=package,
+            allow_unverified=package,
         )
+
         return True
 
-    except subprocess.CalledProcessError:
+    except ErrorReturnCode:
         return False
 
 
