@@ -120,6 +120,7 @@ RUN cd /tmp && tar -xvf gdal-1.11.2.tar.gz && cd gdal-1.11.2 && \
 #    mkdir build && cd build && \
 #    cmake .. && make && make install
 
+RUN pip install sh
 COPY aip.py /usr/local/bin/aip
 RUN chmod +x /usr/local/bin/aip
 RUN aip install --requirement /etc/requirements.txt
